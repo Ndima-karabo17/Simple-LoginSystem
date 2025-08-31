@@ -1,0 +1,210 @@
+body {
+    background-color: #F0F8FF;
+    color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.all {
+    background-color: #d0e5f7;
+    width: 60%;
+    height: 70vh;
+    margin-top: 100px;
+    margin-left: 300px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.welcomePage {
+    width: 35%;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    height: 500px;
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+.all > .welcomePage > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 10px 0 0 0;
+}
+
+.all > .welcomePage > ul > li > button {
+    background-color: #d0e5f7;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    border-radius: 4px;
+    margin-right: 40px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.all > .welcomePage > ul > li > button:hover {
+    background-color: rgb(38, 181, 242);
+}
+
+.all > .welcomePage > ul > li > button > a {
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 5vh;
+}
+
+.all > .welcomePage > #slogan {
+    margin-top: 160px;
+    text-align: center;
+}
+
+#slogan > h2 {
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.signup-section > #signup > h1,
+.signup-section > #login > h1 {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.signup-section > #signup > p,
+.signup-section > #login > p {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+p > span,
+.signup-section > #login > p > span {
+    padding-right: 15px;
+}
+
+.signup-section > #signup > p > a,
+.signup-section > #login > p > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.signup-section > #signup > p > a:hover,
+.signup-section > #login > p > a:hover {
+    color: white;
+}
+
+.signup-section > #login-div > form > input,
+.signup-section > #login-div > form > table input[type="text"],
+.signup-section > #login-div > form > table input[type="email"],
+.signup-section > #login-div > form > table input[type="password"] {
+    width: 200px;
+    height: 4vh;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+#login-div {
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 60px;
+    background-color: #e8f0fe;
+}
+
+#login-div table {
+    width: 100%;
+}
+
+#login-div td {
+    padding: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+#signin-button,
+#signup-button {
+    background-color: #F0F8FF;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#signin-button:hover,
+#signup-button:hover {
+    background-color: #159294;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .all {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .welcomePage,
+    .signup-section {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        height: auto;
+    }
+
+    .signup-section > #signup > h1,
+    .signup-section > #login > h1 {
+        font-size: 22px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .signup-section > #signup > p,
+    .signup-section > #login > p {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .signup-section > #login-div > form > table {
+        width: 100%;
+        
+    }
+
+    .signup-section > #login-div > form input,
+    .signup-section > #login-div > form > table input[type="text"],
+    .signup-section > #login-div > form > table input[type="email"],
+    .signup-section > #login-div > form > table input[type="password"] {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .all > .welcomePage > #slogan > h2 {
+        font-size: 28px;
+    }
+
+    .all > .welcomePage > ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .all > .welcomePage > ul > li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <section class="all">
+    <section class="welcomePage">
+      <ul>
+        <li>Logo</li>
+        <li><button><a href="/">Logout</a></button></li>
+      </ul>
+      <div id="slogan">
+        <h2>Welcome back, <%= user.name %>!</h2>
+      </div>
+    </section>
+
+    <section class="signup-section">
+      <div id="profile-info">
+        <h1>Your Profile</h1>
+        <p><strong>Full Name:</strong> <%= user.name %></p>
+        <p><strong>Email:</strong> <%= user.email %></p>
+      </div>
+    </section>
+  </section>
+</body>
+</html>

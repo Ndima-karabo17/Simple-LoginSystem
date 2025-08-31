@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="all">
+    <section class="welcomePage">
+      <ul>
+        <li>logo</li>
+        <li><button disabled>Profile</button></li>
+      </ul>
+      <div id="slogan">
+        <h2>Sign up to belong.</h2>
+      </div>
+    </section>
+
+    <section class="signup-section">
+      <div id="signup">
+        <h1>Create an account</h1>
+      </div>
+
+      <div id="login-div">
+        <form action="/signup" method="POST">
+          <table>
+            <tr>
+              <td>Full Name:</td>
+              <td><input type="text" name="Username" required /></td>
+            </tr>
+            <tr>
+              <td>Email:</td>
+              <td><input type="email" name="email" required /></td>
+            </tr>
+            <tr>
+              <td>Password:</td>
+              <td><input type="password" name="password" required /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="submit" value="Sign Up" id="signup-button" /></td>
+            </tr>
+          </table>
+        </form>
+        <p><span>Already have an account?</span><a href="index.html">Login</a></p>
+      </div>
+    </section>
+  </section>
+</body>
+</html>
